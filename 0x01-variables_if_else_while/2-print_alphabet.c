@@ -9,6 +9,7 @@
 int main(void)
 {
 	int ch = 'a';
+
 	while (ch <= '2')
 	{
 		putchar(ch);
