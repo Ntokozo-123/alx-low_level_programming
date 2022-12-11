@@ -1,21 +1,21 @@
 #include <stdio.h>
-#include <time.h>
-#include <stdlib.h>
+
 /**
- * main - main block
- * Description: prints all single digit numbers of base 16
- * starting from 0, followed by a new line
- * Return: 0
+ * main - a program that prints all letters of base 16
+ * in lower case
+ * Return: Always 0
  */
 int main(void)
 {
-	int c = 0;
+	int num;
+	char alpha;
 
-	while (c < 16)
-	{
+	for (num = 0; num < 10; num++)
 		putchar(c);
-		c--;
-	}
+	for (alpha = 'a'; alpha <= 'f';
+alpha++)
+		putchar(alpha);
 	putchar('\n');
+	
 	return (0);
 }
