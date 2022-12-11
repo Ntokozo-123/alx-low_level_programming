@@ -1,23 +1,26 @@
 #include <stdio.h>
-#include <stdlib.h>
+
 /**
- * main - a program that prints all letters of base 16
- * in lower case
- * starting from 0, followed by a new line
+ * main - Entry point
+ * 
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-	char ch;
+	int d = 48;
+	char c = 'a';
 
-	for (ch = '0'; ch <= '9'; ch++)
+	while (d < 58)
 	{
-		putchar(ch);
+		putchar(d);
+		d++;
 	}
-	for (ch = 'a'; ch <= 'f'; ch++)
+	while (c <= 'f')
 	{
-		putchar(ch);
+		putchar(c);
+		c++;
 	}
-	putchar('\n');	
+	putchar('\n');
+
 	return (0);
 }
