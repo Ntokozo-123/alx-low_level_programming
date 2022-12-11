@@ -9,7 +9,7 @@
  */
 int main(void)
 {
-	char c = 'z';
+	char c = '0123456789ABCDEF';
 
 	while (c >= 'a')
 	{
