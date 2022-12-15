@@ -3,7 +3,7 @@
 /**
  * print_sign - Determines if an integer is positive, negative or zero
  * @n: the number to be checked
- * Return: 1 if n is positive, 0 if n is zero, -1 if n is less than zero
+ * Return: 1 prints '+' if n > 0, 0 if n = 0, -1 if n < 0
  */
 
 int print_sign(int n)
@@ -15,7 +15,7 @@ int print_sign(int n)
 	}
 	else if (n == 0)
 	{
-		_putchar(0);
+		_putchar('0');
 		return (0);
 	}
 	else
