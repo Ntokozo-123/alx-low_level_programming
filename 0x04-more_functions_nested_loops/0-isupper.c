@@ -3,12 +3,12 @@
 /**
  * _isupper - checks if parameter is an uppercase character
  * @c: input character
- * Return 1 if c is uppercase character, 0 otherwise
+ * Return: 0 if successful
  */
 
 int_isupper(int c)
 {
-	if ((c >= 'A') && (c <= 'Z'))
+	if (c >= 65 && c < 91)
 	{
 		return (1);
 	}
