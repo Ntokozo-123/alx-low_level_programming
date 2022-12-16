@@ -2,9 +2,10 @@
 
 /**
  * print_diagonal - a function that prints a diagonal line
- * @n: input number of times '\' should be printed
- * Return: a diagonal line
+ * @n: input number of times a diagonal line should be printed
+ * Return: void
  */
+
 void print_diagonal(int n)
 {
 	int i, j;
