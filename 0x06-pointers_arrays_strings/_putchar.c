@@ -1,8 +1,9 @@
+#include "main.h"
 #include <unistd.h>
 
 /**
  * _putchar - writes the character c to stdout
- * @c: char ro be printed
+ * @c: char to print
  * Return: 1 on success
  */
 int _putchar(char c)
