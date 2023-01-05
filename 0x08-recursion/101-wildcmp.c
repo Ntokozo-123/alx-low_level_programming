@@ -1,33 +1,22 @@
+/*
+ * File: 101-wildcmp.c
+ * Auth: sam
+ */
+
 #include "main.h"
 
-/**
- * str_checker - check if two strings are identical
- * @s1: string_1 base address
- * @s2: string_2 base address
- * @i: left index
- * @j: special index (joker)
- * Return: 1 if s is palindrome, 0 otherwise
- */
-
-int str_checker(char *s1, char *s2, int i, int j)
-{
-	if (s1[i] == '\0' && s2[j] == '\0')
-		return (1);
-	if (s1[i] == s2[j])
-		return (str_checker(s1, s2, i + 1, j + 1));
-	if (s1[i] == '\0' && s2[j] == '*')
-		return (str_checker(s1, s2, i + 1, j) || str_checker(s1, s2, i, j + 1));
-	return (0);
-}
+int strlen_no_wilds(char *str);
+void iterate_wild(char **wildstr);
+char *postfix_match(char *str, char *postfix);
+int wildcmp(char *s1, char *s2);
 
 /**
- * wildcmp - checks if strings could be considered identical
- * @s1: base address for string
- * @s2: base address for string
- * Return: 1 if considered identical
+ * strlen_no_wilds - Returns the length of a string,
+ * ignoring wildcard characters.
+ * @str: The string to be measured.
+ *
+ * Return: The length.
  */
-
-int wildcmp(char *s1, char *s2)
+int strlen_no_wilds(char *str)
 {
-	return (str_checker(s1, s2, 0, 0));
-}
+	int len = 0, index = 0;
