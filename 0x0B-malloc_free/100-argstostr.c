@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * argstostr - concatenates all the arguments of the program.
+ * argstostr - concatenates all the arguments of your program.
  * @ac: arguments count
  * @av: arguments vector
  *
@@ -26,7 +26,7 @@ char *argstostr(int ac, char **av)
 		len++;
 	}
 
-	str = (shcar *)malloc(sizeof(char) * (len + 1));
+	str = (char *)malloc(sizeof(char) * (len + 1));
 	if (str == NULL)
 		return (NULL);
 
