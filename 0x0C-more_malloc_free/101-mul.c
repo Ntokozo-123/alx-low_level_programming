@@ -35,7 +35,7 @@ void _is_zero(char *argv[])
 }
 
 /**
- * _initialize_array - set memory to zero in a new array
+ * _initialize_array - set memery to zero in a new array
  * @ar: char array.
  * @lar: length of the char array.
  *
@@ -57,9 +57,9 @@ char *_initialize_array(char *ar, int lar)
  * @argv: argument vector.
  * @n: row of the array.
  *
- * Return: lenght of the number.
+ * Return: length of the number.
  */
-int_checknum(char *argv[], int n)
+int _checknum(char *argv[], int n)
 {
 	int ln;
 
