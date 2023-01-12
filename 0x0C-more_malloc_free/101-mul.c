@@ -51,6 +51,7 @@ void errors(void)
 	printf("Error\n");
 	exit(98);
 }
+
 /**
  * main - multiplies two positive numbers
  * @argc: number of arguments
